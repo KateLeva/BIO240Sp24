@@ -1,0 +1,86 @@
+---
+title: 'Probability: joint events'
+author: "KELevasseur and SMWadgymar"
+date: '2023-02-17'
+output: html_document
+---
+
+####Background: joint events
+
+1) Let's simulate two events below and name them A and B.
+
+```{r}
+A<-rbinom(100000, 1, 0.5)
+B<-rbinom(100000, 1, 0.5)
+```
+
+Q: Explain the rbinom example above (how would you explain what this function is doing to a friend outside of class)
+
+A: 
+
+
+2) To get the probability of event A occurring from your simulation (landing a heads for example, so equaling 1), you can use the sum function and divide it by the number of observations (n in our rbinom funtion). Complete the code below. Do the same for event B.
+
+A:
+```{r}
+sum(???)/???
+
+sum(???)/???
+
+```
+
+
+
+We can implement the General Addition Rule for simulations in R, where the vertical line symbol here (|) means 'or':
+
+```{r}
+mean(A|B)
+```
+
+
+We can also implement the Multiplication Rule for Independent Events, where the & symbol means 'and':
+
+```{r}
+mean(A&B)
+```
+
+
+3) If events A and B are independent, and A has a 50% chance of happening and B has a 30% chance of happening, what is the probability that they will both happen?  Use simulations and the code mentioned above to answer this question.
+
+```{r}
+
+```
+
+
+4) Expanding on exercise (3), event C has a 70% chance of happening.  What is the probability that events A, B, and C all happen?
+
+```{r}
+
+```
+
+
+5) If events A and B are independent, and A has a 40% chance of coming up heads and B has a 75% chance of coming up heads, what is the probability that either A or B will come up heads?  Use simulations to answer this question.
+
+```{r}
+
+```
+
+
+6) Suppose X is a random binomially distributed variable (10, 0.3) and Y is another random binomially distributed variable (10, 0.65), and that they are independent.  What is the probability that either of these variables is less than or equal to 5?  Estimate this probability both using simulations of 10,000 trials and by calculating exact cumulative densities. 
+
+
+Using simulations:
+```{r}
+
+```
+
+
+Calculating exact cumulative densities:
+```{r}
+
+```
+
+Q: How do these two approaches compare?
+
+A: 
+
