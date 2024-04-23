@@ -1,0 +1,137 @@
+---
+title: "Quiz 2, Spring 2024"
+output: pdf_document
+---
+
+This part of the quiz consists of 6 questions (Question # 4 through 9) and is worth 100 points.
+
+Insert code chunks where appropriate and knit to a PDF to submit on Moodle. Include appropriate axis labels on all graphs for full points. Also, to avoid issues with knitting, make sure this Rmd file is housed in the same folder as the datasets being used on the quiz (folder called Quiz2). Again, take a look at the knitting troubleshooting steps on Moodle for assistance. Let me know if you have any issues. 
+
+
+
+################################################
+
+Question 4) The babies born in singleton births (not twins, triplets, etc.) in the United States have birth weights that are approximately normally distributed with a mean of 3.30 kg and standard deviation 0.56 kg (Martin et al. 2011). (13 pts)
+
+a) What is the probability of a baby being born weighing more than 5 kg? (3 points)
+
+
+b) What is the probability of a baby being born weighing between 3 kg and 4 kg? (3 points)
+
+
+c) What percentage of babies is more than 1.5 standard deviations from the mean in either direction? (4 points)
+
+
+d) What weight would be the upper limit (cutoff point) for the smallest 10% of babies? (3 points)
+
+
+
+
+################################################
+
+Question 5) The ‘Geyser’ dataset in RStudio includes data on every eruption of Old Faithful Geyser in Yellowstone National Park from August 1st to August 15th, 1985. There are two variables in this dataset called “waiting” and “duration”. Waiting is the time in min from the last eruption, and “Duration” is the length of the eruption in min. (10 points)
+
+a) Using three methodologies, discuss whether the waiting time for this sample is normally distributed. Include any code, output, and graphs you use. (6 points)
+
+
+
+b) Calculate and interpret a 95% confidence interval for the average waiting time at Old Faithful Geyser. Note any assumptions you made. (4 points)
+
+
+
+
+
+################################################
+
+Question 6) Erythronium americanum, also known as trout lily, is an early-spring flowering plant commonly found in the forests of Eastern North America. Previous work indicated that this species needs at least 30 days to grow before individuals have acquired enough resources to produce a flower. This was established as the standard number of days. Dr. Emily Austen suspects that plants have evolved to flower at a faster rate because climate change has resulted in warmer springs. She randomly surveyed 435 plants in a nearby trout lily population and measured the number of days between snow melt (when growth begins) and when plants first flowered. She found that flowers were produced an average of 23.4 days after snowmelt with a standard deviation of 3.7. (16 points)
+ 
+a) Considering Dr. Austen's theory that plants are flowering faster due to climate change (and not slower), state the null and alternative hypotheses (this can be in sentence form). (3 points)
+
+
+b) What test is appropriate here? Be specific. (2 points)
+
+
+
+d) Conduct a formal test to evaluate Dr. Austen’s hypothesis. Interpret the p-value in the context of the hypothesis being tested. (5 points)
+
+
+e) Calculate a 95% confidence interval for average time to flowering. (4 points)
+
+
+f) Interpret this confidence interval in the context of the data. (2 point)
+
+
+
+
+################################################
+
+Question 7) A group of students working with Dr. Wadgymar needed to determine the mass of a large number of Arabidopsis seeds. To speed up the process, they randomly assigned half of the seeds to Dr. Thurtle-Schmidt’s analytical balance (DT-S) and the remainder to Dr. Wadgymar's analytical balance (SW). Two students used the DT-S balance and the other two students in the group used the SW balance. Their data are provided in the file Balances.csv. The sample sizes are unequal because several of the seeds assigned to the DT-S balance fell into an inaccessible crack between cabinets before their masses could be measured. The students wanted to check if the mean mass of seeds measured on the DT-S balance was equal to that of those measured on SW’s balance. (20 points total)
+
+a) Identify the response and explanatory variables. (2 points)
+
+
+b) State the null and alternative hypotheses (can be sentence form). (3 points)
+
+
+c) What test is appropriate here? Be specific. (2 points)
+
+
+d) Check that conditions for inference are satisfied. Provide your detailed reasoning, including any necessary graphs or other analyses conducted in R. (5 points)
+
+
+e) Conduct the formal test you identified in (b) to evaluate your hypothesis. Interpret the p-value in the context of the hypothesis being tested. (5 points)
+
+
+f) The students are a bit worried that the two balances might not be calibrated equally. They decided to randomly select 34 Arabidopsis seeds and placed each seed in a numbered microcentrifuge tube to keep track of each individual seed. They then measured the mass of each seed on both the SW and DT-S balances. State whether you would use the same type of test or a different test for this set of data. Explain your answer. (3 points)
+
+
+
+
+################################################
+
+Question 8) Mosquitoes contribute to more human deaths than any other organism because they transmit diseases such as malaria, dengue fever, and yellow fever. Some of these diseases develop or grow inside the mosquito – a process that can take time. Therefore, one possible strategy to reduce transmission of disease is to cause mosquitos to die slightly sooner, leaving insufficient time for the disease to develop. Fang et al. (2011) tested the idea by infecting mosquitos with a fungus (Matarhizum anisopliae) that reduced the life span of the insect. In addition, they developed a transgenic strain of fungus that carries a gene for scorpine, a protein from scorpion venom known to inhibit the gamete stages of malaria. They compared three groups of mosquitoes: a “control” group that was not treated with fungus, a “wild type” group that was infected with unmodified fungus, and a “scorpine” group that was infected with the transgenic fungus. Each mosquito was infected with malaria. The response variable was the log number of sporozoites (infectious cells of malaria) in the salivary glands of the mosquitoes. The data are in the file Malaria.csv. (16 points total)
+
+
+a) State the null and alternative hypotheses (can be sentence form). (3 points)
+
+
+b) What test is appropriate here? Explain. (2 points)
+
+
+c) Assume that conditions have been verified. Conduct the formal test you identified in (b) using α = 0.05 to evaluate your hypothesis. Interpret the p-value in the context of the hypothesis being tested. (5 points)
+
+
+d) Conduct an appropriate posthoc analysis and interpret the results of the posthoc analysis in the context of the hypotheses being tested. (6 points)
+
+
+
+
+
+################################################
+
+Question 9) Managing the trophy hunting of African lions is an important part of maintaining viable lion populations. Knowing the ages of the male lions helps, because removing males older than six years old has little impact on lion social structure, whereas taking younger males is more disruptive. Except how can hunters and guides know how old a male lion is? One suggestion is that the amount of black pigmentation on the nose of male lions increases as they get older and so could be used to estimate the age of unknown lions. To test this, data on age and proportion of black pigmentation on the noses of 32 male lions (of known age) in Tanzania was collected and is in the file “LionNoses.csv” (Whitman et al. 2004). Let's see if we can use these data to predict a lion’s age from the proportion of black on his nose? (25 points)
+
+a) Identify the explanatory and response variables for this research question. (2 points)
+
+
+b) Visualize the data with an appropriate graph. Describe the relationship between the two variables. (3 points)
+
+
+c) State the appropriate hypotheses for this test. (3 points)
+
+
+d) Generate the linear model and interpret the equation in the context of the data. (5 points)
+
+
+e) Update your previous graph to incorporate the linear model. (3 points)
+
+
+f) Report the correlation coefficient and R2 for the data and interpret each in the context of the data. Explain the difference in what the correlation coefficient reports versus what the R2 value reports (5 points).
+
+
+g) What if a lion’s nose was completely black? Predict the age of that lion and interpret this prediction in the context of the data. Do you believe this is a legitimate estimate? Why or why not? (4 points)
+
+
+
+
+################################################
